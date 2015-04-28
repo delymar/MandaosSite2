@@ -1,0 +1,342 @@
+/*!
+ * Start Bootstrap - Business Casual Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    font-family: "Arial";
+    background: url('../img/img.jpg') no-repeat ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;    
+    font-family:arial , sans-serif;line-height:1;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #3A3636;
+    text-shadow: 0.01em 0.01em 0.01em #3A3636;
+}
+
+p {
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: #3A3636;
+}
+
+.servicios{
+    font-size: 13px;
+}
+
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px #3A3636;
+    backface-visibility: hidden;
+    -webkit-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.prueba { 
+    background-color: rgb(32, 110, 181);
+    box-shadow: 0 0 1px #3A3636;
+    transform: scale(1.11);
+    transition-duration: 216000s;
+    transform: translateZ(30);
+    vertical-align: middle;
+    letter-spacing: 0px;
+    font-size: 1.04em;
+
+}
+
+.prueba:hover, 
+.prueba:focus,
+.prueba:active { 
+    background-color: rgb(30, 105, 173);
+    box-shadow: 0 0 1px #3A3636;
+    transform: scale(1.11);
+}
+
+.titulo1{
+    font-weight:bold;
+    font-variant:small-caps;
+    letter-spacing:1pt;
+    word-spacing:-1pt;
+    font-size:61px;
+    text-align:center;
+    font-family:arial black, sans-serif;line-height:2;
+
+}
+
+.titulo2{
+    font-weight:bold;
+    font-variant:small-caps;
+    color:#3A3636;
+    letter-spacing:1pt;
+    word-spacing:-1pt;
+    font-size:23px;
+    text-align:center;
+    font-family:arial , sans-serif;line-height:2;
+}
+
+.telefono{
+    font-weight:bold;
+    font-variant:small-caps;
+    color:#3A3636;
+    letter-spacing:0pt;
+    word-spacing:-1pt;
+    font-size:17px;
+    font-family:arial , sans-serif;line-height:1;
+}
+
+.titulofooter{
+    font-weight:bold;
+    font-variant:small-caps;
+    color:#FFF;
+    letter-spacing:0pt;
+    word-spacing:-1pt;
+    font-size:18px;
+    text-align:center;
+    font-family:arial , sans-serif;line-height:1;
+}
+
+.titulonumero{
+    font-weight:bold;
+    font-variant:small-caps;
+    color:#3A3636;
+    letter-spacing:0pt;
+    word-spacing:25pt;
+    font-size:45px;
+    text-align:center;
+    font-family:arial , sans-serif;line-height:1;
+    text-shadow: 0.02em 0.02em 0.03em #3A3636;
+}
+
+
+hr {
+    max-width: 400px;
+    border-color: #999999;
+
+}
+
+.brand {
+    display: none;
+    
+}
+
+.address-bar{
+    display: none;
+    text-shadow: 0.1em 1.1em 3em #000;
+    font-family: 'Pacifico', cursive;
+    line-height:1;
+    font-size: 1em; 
+    margin: 1000px;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.navbar-nav {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.img-full {
+    min-width: 100%;
+}
+
+.brand-before,
+.brand-name {
+    text-transform: capitalize;
+    letter-spacing:0pt;
+    word-spacing:2pt;
+    font-size:37px;
+    text-shadow: 0.01em 0.01em 0.1em #3A3636;
+    font-family:arial , sans-serif;line-height:1;
+    
+} 
+
+.subtitulo {
+    text-transform: capitalize;
+    letter-spacing:0pt;
+    word-spacing:2pt;
+    font-size:28px;
+    text-shadow: 0.01em 0.01em 0.01em #3A3636;
+    font-family:arial , sans-serif;line-height:1;
+    color:#3A3636;
+} 
+
+.subtitulo2 {
+    text-transform: capitalize;
+    letter-spacing:0pt;
+    word-spacing:2pt;
+    font-size:28px;
+    text-shadow: 0.01em 0.001em 0.001em #3A3636;
+    font-family:arial , sans-serif;line-height:1;
+    color:#3A3636;
+} 
+
+
+.brand-before {
+    margin: 15px 0;
+}
+
+.brand-name {
+    margin: 0;
+    font-size: 4em;
+}
+
+.tagline-divider {
+    margin: 15px auto 3px;
+    max-width: 250px;
+    border-color: #999999;
+}
+
+.box {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+.intro-text {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.img-border {
+    float: none;
+    margin: 0 auto 0;
+    border: #999999 solid 0px;
+}
+
+.comida{
+    text-align: center;
+}
+ .service-item {
+    margin-bottom: 30px;
+}
+.img-left {
+    float: none;
+    margin: 0 auto 0;
+}
+
+footer {
+    color: white;
+    width: 1170px;
+
+}
+
+footer p {
+    margin: 0;
+    padding: 50px 0;
+    color: white
+}
+footer a {
+    color: rgb(255,129,59);
+    
+}
+footer a:hover{
+    color: rgb(214,76,0);
+
+}
+
+@media screen and (min-width:768px) {
+    .brand {
+        display: inherit;
+        margin: 0;
+        padding: 30px 0 10px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 5em;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+    }
+
+    .top-divider {
+        margin-top: 0;
+    }
+
+    .img-left {
+        float: left;
+        margin-right: 25px;
+    }
+
+    .address-bar {
+        display: inherit;
+        margin: 0;
+        padding: 0 0 40px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        text-transform: uppercase;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+
+    .navbar {
+        border-radius: 0;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 0;
+        margin-top: -25px;
+    }
+
+    .navbar-default {
+        border: none;
+        background: #fff;
+        background: rgb(235, 95, 0);
+
+    }
+
+    .nav>li>a {
+        padding: 35px;
+    }
+
+    .navbar-nav>li>a {
+        line-height: normal;
+    }
+
+    .navbar-nav {
+        display: table;
+        float: none;
+        margin: auto;
+        table-layout: fixed;
+        font-size: 1.25em;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
