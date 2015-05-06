@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Mandao's Express. Entregas a domicilio, Ciudad Guayana. Bolívar. Venezuela">
+    <meta name="author" content="Ing. Delymar Rodríguez">
 
-    <title>MANDAO'S EXPRESS</title>
+    <title>Paga tus encomiendas | Mandao's Express</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -78,14 +78,13 @@
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                   <h2 class="intro-text text-center subtitulo2">Contacto 
-                        <strong class="subtitulo">MANDAO'S EXPRESS</strong>
+                   <h2 class="intro-text text-center subtitulo2">MUY PRONTO 
+                        <strong class="subtitulo">MANDAO'S EXPRESS | Pago en L&iacute;nea</strong>
                     </h2>
                     <hr>
                 </div>
                 <div class="col-md-8">
-                    <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
-                    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+                <<img src="img/mandaos.png" alt="Mandaos" class="img-responsive">
                 </div>
                 <div class="col-md-4">
                     <br>
@@ -216,7 +215,16 @@
         interval: 5000 //changes the speed
     })
     </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-45852134-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 
 
