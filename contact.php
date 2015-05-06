@@ -229,6 +229,10 @@
             data:{email: email, user:user, message:message, telf: telf},
             success: function (res){
                 alert("El mensaje se ha enviado con éxito");
+                $("#email").val("");
+                $("#user").val("");
+                $("#message").val("");
+                $("#telf").val("");
             },
             error : function (err){
                 alert("Ocurrió un problema, disculpenos");

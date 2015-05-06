@@ -84,7 +84,7 @@
                     <hr>
                 </div>
                 <div class="col-md-8">
-                <<img src="img/mandaos.png" alt="Mandaos" class="img-responsive">
+                    <img src="img/mandaos.png" alt="Mandaos" class="img-responsive">
                 </div>
                 <div class="col-md-4">
                     <br>
