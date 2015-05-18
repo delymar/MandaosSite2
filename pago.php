@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Mandao's Express. Entregas a domicilio, Ciudad Guayana. Bolívar. Venezuela">
-    <meta name="author" content="Ing. Delymar Rodríguez">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <title>Paga tus encomiendas | Mandao's Express</title>
+    <title>Ahora podrás pagar tus pedidos | Mandao's Express</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -73,82 +73,295 @@
 
 
     <div class="container">
-
         <div class="row">
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                   <h2 class="intro-text text-center subtitulo2">MUY PRONTO 
-                        <strong class="subtitulo">MANDAO'S EXPRESS | Pago en L&iacute;nea</strong>
-                    </h2>
-                    <hr>
-                </div>
-                <div class="col-md-8">
-                    <img src="img/mandaos.png" alt="Mandaos" class="img-responsive">
-                </div>
-                <div class="col-md-4">
-                    <br>
-                    <p>Telefono: 
-                        <strong class= "telefono">0286-961.80.24/ 0424-951.00.04</strong>
-                    </p>
-                    <p>Email:
-                        <strong><a href="mailto:rodriguezdelymar@gmail.com">mandaosexpress@gmail.com</a></strong>
-                    </p>
-                    <p>Redes Sociales:
-                        <br>
-                        <a href="https://facebook.com/Mandaos_Express"><img src="img/face.png"  width='50' height='50' ></a>
-                        <a href="https://facebook.com/Mandaos_Express"> Mandao's Express, C.A</a><br><br>
-                        <a href="https://instagram.com/mandaos_express"><img src="img/insta.png"  width='50' height='50' ></a>
-                        <a href="https://instagram.com/mandaos_express"> @mandaos_express</a><br><br>
-                        <a href="https://twitter.com/Mandaos_Express"><img src="img/twit.png"  width='50' height='50' ></a>
-                         <a href="https://twitter.com/Mandaos_Express"> @Mandaos_Express</a>
-                    </p>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                     <h2 class="intro-text text-center subtitulo2">Ya puedes escribirnos
+                    <h2 class="intro-text text-center subtitulo2">Pago
                         <strong class="subtitulo">MANDAO'S EXPRESS</strong>
                     </h2>
                     <hr>
-                    <p> </p>
-                    <form role="form">
-                        <div class="row">
-                            <div class="form-group col-lg-4">
-                                <label>Nombre y Apellido</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group col-lg-4">
-                                <label>Correo Electrónico</label>
-                                <input type="email" class="form-control">
-                            </div>
-                            <div class="form-group col-lg-4">
-                                <label>Número de Telefono</label>
-                                <input type="tel" class="form-control">
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="form-group col-lg-12">
-                                <label>Mensaje</label>
-                                <textarea class="form-control" rows="6"></textarea>
-                            </div>
-                            <div>
-                                <input type="submit" name="submit" id="submit" value="Enviar" class="btn btn-info pull-right">
-                            </div>
-
-                         </div>
-
-                        </div>
-                    </form>
                 </div>
+                <div class="col-md-12">
+                  <div class="row">  
+                      <div class="form-group col-lg-6">
+                        <label>Número de Factura</label>
+                          <input type="text" id="paymentId" class="form-control btn-center" value="" />
+                      </div>
+                       <div class="form-group col-lg-6">
+                        <label>Pasos para realizar un pago</label>
+                         <div class="form-group col-lg-12">
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                  <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        1er Paso--- 
+                                      </a>
+                                    </h4>
+                                  </div>
+                                  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                       3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
+                                       Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                        Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                                        heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        2do Paso--- 
+                                      </a>
+                                    </h4>
+                                  </div>
+                                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                       3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
+                                       Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
+                                       sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                       Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                                       raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        3er Paso--- 
+                                      </a>
+                                    </h4>
+                                  </div>
+                                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+                                      3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                       Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. 
+                                        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                                         raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+                              </div>
+                              </div>
+                              <div class="row" >
+                                <div class="form-group col-lg-6">
+                                   <button id="loadPayment" type="button" class="btn btn-info btn-center" onclick="loadPayment()">
+                                         REALIZAR PAGO
+                                   </button>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="clearfix"></div>
+                          </div>
+                        </div>
+
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="intro-text text-center subtitulo2">Paso Número 2 para realizar Pago</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">  
+                          <div class="form-group col-lg-6">
+                            <label>Número de Factura</label>
+                              <input type="text" class="form-control btn-center" id="paymentId2" name="paymentId2" value="" />
+                          </div>
+                        </div>
+                        <div class="row">  
+                          <div class="form-group col-lg-6">
+                            <label>Nombre y Apellido</label>
+                              <input type="text" class="form-control btn-center" id="client" />
+                          </div>
+                        </div>
+                        <div class="row">  
+                          <div class="form-group col-lg-6">
+                            <label>Dirección</label>
+                              <input type="text" class="form-control btn-center" id="addressDestination" />
+                          </div>
+                        </div>
+                         <div class="row">  
+                          <div class="form-group col-lg-6">
+                            <label>Descripción del Pedido</label>
+                                <textarea class="form-control" rows="3" id="orderDescription"></textarea>
+                          </div>
+                        </div>
+                        <div class="row" >
+                            <div class="form-group col-lg-6">
+                              <div>
+                               <button type="button" class="btn btn-info btn-center" data-toggle="modal" onclick="loadPayment2()">
+                                        Confirmar
+                                </button>
+                                <button type="button" class="btn btn-info btn-center " data-dismiss="modal" aria-label="Close">
+                                        Cancelar
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                  </div>
             </div>
         </div>
 
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="intro-text text-center subtitulo2">Paso Número 3 para realizar Pago</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row" >
+                            <div class="form-group col-lg-12">
+                              <label>Tipo de Pago</label>
+                              <div>
+                                <button type="button" class="btn btn-info btn-center" data-toggle="modal" onclick="loadPayment3()">
+                                        Transferencia
+                                </button>
+                                 <button type="button" class="btn btn-info btn-center" data-toggle="modal" onclick="loadPayment4()">
+                                        Tarjeta de Credito
+                                </button>
+                                <button type="button" class="btn btn-info btn-center " data-dismiss="modal" aria-label="Close">
+                                        Cancelar
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="intro-text text-center subtitulo2">Paso Número 4 para realizar Pago</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">  
+                          <div class="form-group col-lg-6">
+                            <label>Nombre</label>
+                              <input type="text" class="form-control">
+                          </div>
+                          <div class="form-group col-lg-6">
+                            <label>Apellido</label>
+                               <input type="text" class="form-control">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-group col-lg-6">
+                              <label>Banco Emisor</label>
+                              <select type="list" class="form-control">
+                                   <option value="0">*---*</option> 
+                                   <option value="1">Banco Caroní</option> 
+                                   <option value="2">Banco Confederado</option>
+                                   <option value="3">Corp Banca</option> 
+                                   <option value="4">Banco del Caribe</option> 
+                                   <option value="5">Banco de Venezuela</option> 
+                                   <option value="6">Banco Sofitasa</option> 
+                                   <option value="7"> Banesco</option> 
+                                   <option value="8"> Banfoandes</option>
+                                   <option value="9"> Banco Occidental de Descuento</option>
+                                   <option value="10"> Banco Venezolano de Crédito</option>
+                                   <option value="11"> Banco Guayana</option>
+                                   <option value="12"> Banco Exterior</option>
+                                   <option value="13"> Banco Provincial</option>
+                                   <option value="14"> Banco Industrial de Venezuela</option>
+                                   <option value="15"> Banco Mercantil</option>
+                                   <option value="16"> Del Sur</option>
+                              </select>
+                          </div>
+                          <div class="form-group col-lg-6">
+                              <label>Banco Receptor</label>
+                              <select type="list" class="form-control">
+                                   <option value="0">*---*</option> 
+                                   <option value="1">Banco Caroní</option> 
+                                   <option value="2">Banco Confederado</option>
+                                   <option value="3">Corp Banca</option> 
+                                   <option value="4">Banco del Caribe</option> 
+                                   <option value="5">Banco de Venezuela</option> 
+                                   <option value="6">Banco Sofitasa</option> 
+                                   <option value="7"> Banesco</option> 
+                                   <option value="8"> Banfoandes</option>
+                                   <option value="9"> Banco Occidental de Descuento</option>
+                                   <option value="10"> Banco Venezolano de Crédito</option>
+                                   <option value="11"> Banco Guayana</option>
+                                   <option value="12"> Banco Exterior</option>
+                                   <option value="13"> Banco Provincial</option>
+                                   <option value="14"> Banco Industrial de Venezuela</option>
+                                   <option value="15"> Banco Mercantil</option>
+                                   <option value="16"> Del Sur</option>
+                              </select>
+                        </div> </div>
+                        <div class="row">
+                            <div class="form-group col-lg-6">
+                                <label>Número de Transferencia</label>
+                                <input type="tel" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="clearfix"></div>
+                            <div class="form-group col-lg-6">
+                                <label>Observación</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="row" >
+                            <div class="form-group col-lg-6">
+                              <div>
+                                 <button type="button" class="btn btn-info btn-center" data-toggle="modal" onclick="loadPayment5()">
+                                        Enviar
+                                </button>
+                                <button type="button" class="btn btn-info btn-center " data-dismiss="modal" aria-label="Close">
+                                        Cancelar
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
     </div>
+
+    <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+             <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                           <p>Se esta verificando la información enviada</p>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
  <!-- /.container -->
 
   <!-- Footer de la Página -->
@@ -213,18 +426,59 @@
     <script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed
-    })
+    });
+    var url = "https://mandaos-virtual.herokuapp.com/";
+    function loadPayment () {
+      var paymentId = $('#paymentId').val();
+      if(paymentId == "" || !paymentId ){
+        alert("Debes introducir el número de pago suministrado por la empresa");
+        return;
+      }else{
+        var route = url+'pago/'+paymentId;
+        console.log(route);
+        // $.ajax({
+        //   url : route,
+        //   type: 'GET',
+        //   converters: {"* text": window.String, "text html": true, "text json": jQuery.parseJSON, "text xml": jQuery.parseXML},
+        //   success: function (data) {
+        //     alert(data);
+        //   },
+        //   error: function (err) {
+        //     alert(err);
+        //     alert("Lo sentimos, no pudimos obtener respuesta concreta. Lo invitamos a comunicarse con la empresa MANDAO'S EXPRESS");
+        //   }
+        // });
+        $.getJSON( route, function( data ) {
+          console.log(data.paymentId);
+          $('#paymentId2').val(data.paymentId);
+          $('#client').val(data.nameClient+' '+data.lastNameClient);
+          $('#addressDestination').val(data.addressDestination);
+          $('#orderDescription').val(data.orderDescription);
+          $('#myModal1').modal('toggle');
+        });
+
+      }
+    }
+
+    // function loadPayment () {
+    //   $('#myModal1').modal('toggle');
+    // }
+    function loadPayment2 () {
+      $('#myModal1').modal('toggle');
+      $('#myModal2').modal('toggle');
+    }
+    function loadPayment3 () {
+      $('#myModal2').modal('toggle');
+      $('#myModal4').modal('toggle');
+    }
+    function loadPayment5 () {
+      $('#myModal4').modal('toggle');
+      $('#myModal6').modal('toggle');
+    }
     </script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    </script>
 
-  ga('create', 'UA-45852134-2', 'auto');
-  ga('send', 'pageview');
 
-</script>
 </body>
 
 
