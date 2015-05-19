@@ -17,6 +17,7 @@
     <!-- Custom CSS -->
     <link href="css/business-casual.css" rel="stylesheet">
     <link href="css/hover.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
@@ -157,7 +158,7 @@
                               </div>
                               <div class="row" >
                                 <div class="form-group col-lg-6">
-                                   <button id="loadPayment" type="button" class="btn btn-info btn-center" onclick="loadPayment()">
+                                   <button id="loadPayment" type="button" class="btn btn-success btn-center" onclick="loadPayment()">
                                          REALIZAR PAGO
                                    </button>
                                 </div>
@@ -177,34 +178,44 @@
                         <div class="row">  
                           <div class="form-group col-lg-6">
                             <label>Número de Factura</label>
-                              <input type="text" class="form-control btn-center" id="paymentId2" name="paymentId2" value="" />
+                              <input type="text" class="form-control btn-center" id="paymentId2" name="paymentId2" value="" disabled=""/>
                           </div>
                         </div>
                         <div class="row">  
                           <div class="form-group col-lg-6">
                             <label>Nombre y Apellido</label>
-                              <input type="text" class="form-control btn-center" id="client" />
+                              <input type="text" class="form-control btn-center" id="client" disabled="" />
                           </div>
                         </div>
                         <div class="row">  
                           <div class="form-group col-lg-6">
                             <label>Dirección</label>
-                              <input type="text" class="form-control btn-center" id="addressDestination" />
+                              <input type="text" class="form-control btn-center" id="addressDestination" disabled=""/>
                           </div>
                         </div>
                          <div class="row">  
                           <div class="form-group col-lg-6">
                             <label>Descripción del Pedido</label>
-                                <textarea class="form-control" rows="3" id="orderDescription"></textarea>
+                                <textarea class="form-control" rows="3" id="orderDescription" disabled=""></textarea>
+                          </div>
+                        </div>
+                         <div class="row">  
+                            
+                          <div class="form-group col-lg-6">
+                            <label>Total a pagar</label>
+                                <div class="input-group">
+                              <div class="input-group-addon "><span class="moneda">Bs</span></div>
+                              <input type="text" id="totalPayment" value="" class="form-control " disabled="" />                        
+                            </div>
                           </div>
                         </div>
                         <div class="row" >
                             <div class="form-group col-lg-6">
                               <div>
-                               <button type="button" class="btn btn-info btn-center" data-toggle="modal" onclick="loadPayment2()">
+                               <button type="button" class="btn btn-success btn-center" data-toggle="modal" onclick="loadPayment2()">
                                         Confirmar
                                 </button>
-                                <button type="button" class="btn btn-info btn-center " data-dismiss="modal" aria-label="Close">
+                                <button type="button" class="btn btn-danger btn-center " data-dismiss="modal" aria-label="Close">
                                         Cancelar
                                 </button>
                               </div>
@@ -228,13 +239,13 @@
                             <div class="form-group col-lg-12">
                               <label>Tipo de Pago</label>
                               <div>
-                                <button type="button" class="btn btn-info btn-center" data-toggle="modal" onclick="loadPayment3()">
-                                        Transferencia
+                                <button type="button" class="btn btn-success btn-center" data-toggle="modal" onclick="loadPayment3()">
+                                       <i class="fa fa-university"></i> Transferencia
                                 </button>
-                                 <button type="button" class="btn btn-info btn-center" data-toggle="modal" onclick="loadPayment4()">
-                                        Tarjeta de Credito
-                                </button>
-                                <button type="button" class="btn btn-info btn-center " data-dismiss="modal" aria-label="Close">
+                                 <a class="btn btn-success btn-center" id="mercadoPagoButton" >
+                                        <i class="fa fa-credit-card"></i> Tarjeta de Credito
+                                </a>
+                                <button type="button" class="btn btn-danger btn-center " data-dismiss="modal" aria-label="Close">
                                         Cancelar
                                 </button>
                               </div>
@@ -254,86 +265,94 @@
                       <h2 class="intro-text text-center subtitulo2">Paso Número 4 para realizar Pago</h2>
                     </div>
                     <div class="modal-body">
+                    <form  accept-charset="utf-8">
+                        <div class="row">  
+                          <div class="form-group col-lg-6">
+                            <label>Número de Factura</label>
+                              <input type="text" name="paymentId3" disabled="" class="form-control">
+                          </div>
+                        </div>
                         <div class="row">  
                           <div class="form-group col-lg-6">
                             <label>Nombre</label>
-                              <input type="text" class="form-control">
+                              <input type="text" name="nameT" class="form-control">
                           </div>
                           <div class="form-group col-lg-6">
                             <label>Apellido</label>
-                               <input type="text" class="form-control">
+                               <input type="text" name="lastNameT" class="form-control">
                           </div>
                         </div>
                         <div class="row">
                           <div class="form-group col-lg-6">
                               <label>Banco Emisor</label>
-                              <select type="list" class="form-control">
-                                   <option value="0">*---*</option> 
-                                   <option value="1">Banco Caroní</option> 
-                                   <option value="2">Banco Confederado</option>
-                                   <option value="3">Corp Banca</option> 
-                                   <option value="4">Banco del Caribe</option> 
-                                   <option value="5">Banco de Venezuela</option> 
-                                   <option value="6">Banco Sofitasa</option> 
-                                   <option value="7"> Banesco</option> 
-                                   <option value="8"> Banfoandes</option>
-                                   <option value="9"> Banco Occidental de Descuento</option>
-                                   <option value="10"> Banco Venezolano de Crédito</option>
-                                   <option value="11"> Banco Guayana</option>
-                                   <option value="12"> Banco Exterior</option>
-                                   <option value="13"> Banco Provincial</option>
-                                   <option value="14"> Banco Industrial de Venezuela</option>
-                                   <option value="15"> Banco Mercantil</option>
-                                   <option value="16"> Del Sur</option>
+                              <select type="list" name="startBank" class="form-control">
+                                   <option value="" disabled="" selected="">*---*</option> 
+                                   <option value="Banco Caroní">Banco Caroní</option> 
+                                   <option value="Banco Confederado">Banco Confederado</option>
+                                   <option value="Corp Banca">Corp Banca</option> 
+                                   <option value="Banco del Caribe">Banco del Caribe</option> 
+                                   <option value="Banco de Venezuela">Banco de Venezuela</option> 
+                                   <option value="Banco Sofitasa">Banco Sofitasa</option> 
+                                   <option value="Banesco"> Banesco</option> 
+                                   <option value="Banfoandes"> Banfoandes</option>
+                                   <option value="Banco Occidental de Descuento"> Banco Occidental de Descuento</option>
+                                   <option value="Banco Venezolano de Crédito"> Banco Venezolano de Crédito</option>
+                                   <option value="Banco Guayana"> Banco Guayana</option>
+                                   <option value="Banco Exterior"> Banco Exterior</option>
+                                   <option value="Banco Provincial"> Banco Provincial</option>
+                                   <option value="Banco Industrial de Venezuela"> Banco Industrial de Venezuela</option>
+                                   <option value="Banco Mercantil"> Banco Mercantil</option>
+                                   <option value="Del Sur"> Del Sur</option>
                               </select>
                           </div>
                           <div class="form-group col-lg-6">
                               <label>Banco Receptor</label>
-                              <select type="list" class="form-control">
-                                   <option value="0">*---*</option> 
-                                   <option value="1">Banco Caroní</option> 
-                                   <option value="2">Banco Confederado</option>
-                                   <option value="3">Corp Banca</option> 
-                                   <option value="4">Banco del Caribe</option> 
-                                   <option value="5">Banco de Venezuela</option> 
-                                   <option value="6">Banco Sofitasa</option> 
-                                   <option value="7"> Banesco</option> 
-                                   <option value="8"> Banfoandes</option>
-                                   <option value="9"> Banco Occidental de Descuento</option>
-                                   <option value="10"> Banco Venezolano de Crédito</option>
-                                   <option value="11"> Banco Guayana</option>
-                                   <option value="12"> Banco Exterior</option>
-                                   <option value="13"> Banco Provincial</option>
-                                   <option value="14"> Banco Industrial de Venezuela</option>
-                                   <option value="15"> Banco Mercantil</option>
-                                   <option value="16"> Del Sur</option>
+                              <select type="list" name="endBank" class="form-control">
+                                   <option value="" disabled="" selected="">*---*</option> 
+                                   <option value="Banco Caroní">Banco Caroní</option> 
+                                   <option value="Banco Confederado">Banco Confederado</option>
+                                   <option value="Corp Banca">Corp Banca</option> 
+                                   <option value="Banco del Caribe">Banco del Caribe</option> 
+                                   <option value="Banco de Venezuela">Banco de Venezuela</option> 
+                                   <option value="Banco Sofitasa">Banco Sofitasa</option> 
+                                   <option value="Banesco"> Banesco</option> 
+                                   <option value="Banfoandes"> Banfoandes</option>
+                                   <option value="Banco Occidental de Descuento"> Banco Occidental de Descuento</option>
+                                   <option value="Banco Venezolano de Crédito"> Banco Venezolano de Crédito</option>
+                                   <option value="Banco Guayana"> Banco Guayana</option>
+                                   <option value="Banco Exterior"> Banco Exterior</option>
+                                   <option value="Banco Provincial"> Banco Provincial</option>
+                                   <option value="Banco Industrial de Venezuela"> Banco Industrial de Venezuela</option>
+                                   <option value="Banco Mercantil"> Banco Mercantil</option>
+                                   <option value="Del Sur"> Del Sur</option>
                               </select>
                         </div> </div>
                         <div class="row">
                             <div class="form-group col-lg-6">
                                 <label>Número de Transferencia</label>
-                                <input type="tel" class="form-control">
+                                <input type="tel" name="transferNumber" class="form-control">
                             </div>
                         </div>
                         <div class="row">
                             <div class="clearfix"></div>
                             <div class="form-group col-lg-6">
                                 <label>Observación</label>
-                                <textarea class="form-control" rows="3"></textarea>
+                                <textarea class="form-control" name="observations" rows="3"></textarea>
                             </div>
                         </div>
                         <div class="row" >
                             <div class="form-group col-lg-6">
                               <div>
-                                 <button type="button" class="btn btn-info btn-center" data-toggle="modal" onclick="loadPayment5()">
+                                 <button type="button" class="btn btn-success btn-center" data-toggle="modal" onclick="loadPayment5()">
                                         Enviar
                                 </button>
-                                <button type="button" class="btn btn-info btn-center " data-dismiss="modal" aria-label="Close">
+                                <button type="button" class="btn btn-danger btn-center " data-dismiss="modal" aria-label="Close">
                                         Cancelar
                                 </button>
                               </div>
                             </div>
                         </div>
+                        </form>
                         <div class="modal-footer">
                         </div>
                     </div>
@@ -349,9 +368,7 @@
                       <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     </div>
                     <div class="modal-body">
-                           <p>Se esta verificando la información enviada</p>
-                        </div>
-                        <div class="modal-footer">
+                           <h2><i class="fa fa-cog fa-spin"></i>Se esta verificando la información enviada</h2>
                         </div>
                     </div>
                   </div>
@@ -428,6 +445,7 @@
         interval: 5000 //changes the speed
     });
     var url = "https://mandaos-virtual.herokuapp.com/";
+
     function loadPayment () {
       var paymentId = $('#paymentId').val();
       if(paymentId == "" || !paymentId ){
@@ -435,44 +453,77 @@
         return;
       }else{
         var route = url+'pago/'+paymentId;
-        console.log(route);
-        // $.ajax({
-        //   url : route,
-        //   type: 'GET',
-        //   converters: {"* text": window.String, "text html": true, "text json": jQuery.parseJSON, "text xml": jQuery.parseXML},
-        //   success: function (data) {
-        //     alert(data);
-        //   },
-        //   error: function (err) {
-        //     alert(err);
-        //     alert("Lo sentimos, no pudimos obtener respuesta concreta. Lo invitamos a comunicarse con la empresa MANDAO'S EXPRESS");
-        //   }
-        // });
-        $.getJSON( route, function( data ) {
-          console.log(data.paymentId);
+        $.getJSON(route,function () {
+          loader();
+        })
+        .done(function (data){
+          loader();
           $('#paymentId2').val(data.paymentId);
           $('#client').val(data.nameClient+' '+data.lastNameClient);
           $('#addressDestination').val(data.addressDestination);
           $('#orderDescription').val(data.orderDescription);
+          $('#totalPayment').val(data.totalPayment);
           $('#myModal1').modal('toggle');
+        })
+        .fail(function(err){
+          loader();
+          alert("Ha surgido un error desde el servidor:\n"+err.error);
         });
 
       }
     }
 
-    // function loadPayment () {
-    //   $('#myModal1').modal('toggle');
-    // }
     function loadPayment2 () {
-      $('#myModal1').modal('toggle');
-      $('#myModal2').modal('toggle');
+      var route = url+'mercado-pago'
+      $.getJSON(route,{paymentId: $('#paymentId2').val(), orderDescription: $('#orderDescription').val(), totalPayment : $('#totalPayment').val()},function(){
+        loader();
+      })
+      .done(function (data) {
+        loader();
+        $('#myModal1').modal('toggle');
+        $('#mercadoPagoButton').prop('href',data.button.preference.response.init_point);
+        $('#myModal2').modal('toggle');
+      })
+      .fail(function (err) {
+        loader();
+        alert("Lo sentimos, por favor recargue la página.");
+      })
     }
     function loadPayment3 () {
       $('#myModal2').modal('toggle');
       $('#myModal4').modal('toggle');
     }
     function loadPayment5 () {
-      $('#myModal4').modal('toggle');
+      var url = "http://mandaos-express.com.ve/mail-transfer.php";
+
+      $.ajax({
+        url: url,
+        type: 'POST',
+        data:{
+          paymentId: $('#paymentId3').val(),
+          nombre: $('#nameT').val,
+          apellido: $('#lastNameT').val,
+          bancoEmisor: $('#startBank').val,
+          bancoReceptor: $('#endBank').val,
+          numeroTrasnferencia: $('#transferNumber').val,
+          observaciones: $('#observations').val
+        },
+        complete: function () {
+          $('#myModal4').modal('toggle');
+          loader();
+        },
+        success : function () {
+          loader();
+          alert("se ha enviado la transfernecia, en minutos lo contactaremos");
+        },
+        error : function (err) {
+          loader()
+          alert("existe un error con el servidor: "+err.error);
+        }
+      });
+    }
+
+    function loader(){
       $('#myModal6').modal('toggle');
     }
     </script>
